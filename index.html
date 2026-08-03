@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amol Rangole — Frontend / UI Developer</title>
+    <meta
+      name="description"
+      content="Amol Rangole is a Frontend/UI Developer with 6+ years of experience building pixel-perfect, responsive widgets for insurance, lending and banking platforms — from Figma to production HTML, CSS and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Developer, UI Developer, HTML5, CSS3, JavaScript, Responsive Design, Pixel Perfect, Widget Development, Nunjucks, Figma to Code"
+    />
+    <meta name="author" content="Amol Mahadeo Rangole" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Amol Rangole — Frontend / UI Developer"
+    />
+    <meta
+      property="og:description"
+      content="6+ years building pixel-perfect, responsive widgets for insurance, lending and banking platforms."
+    />
+    <meta property="og:image" content="assets/profile.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <button class="skip-link" onclick="document.getElementById('main').focus()">
+      Skip to content
+    </button>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#top" class="nav__logo" aria-label="Amol Rangole, home">
+          <span class="nav__logo-mark"
+            >AR<span class="nav__logo-bracket">{ }</span></span
+          >
+        </a>
+
+        <nav class="nav__links" id="navLinks" aria-label="Primary">
+          <a href="#about" class="nav__link">About</a>
+          <a href="#skills" class="nav__link">Skills</a>
+          <a href="#experience" class="nav__link">Experience</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#impact" class="nav__link">Impact</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a
+            href="../portfolio/assests/Amol_Rangole_Resume.pdf"
+            download
+            class="btn btn--ghost btn--sm"
+            >Resume</a
+          >
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-menu__link">About</a>
+        <a href="#skills" class="mobile-menu__link">Skills</a>
+        <a href="#experience" class="mobile-menu__link">Experience</a>
+        <a href="#projects" class="mobile-menu__link">Projects</a>
+        <a href="#impact" class="mobile-menu__link">Impact</a>
+        <a href="#contact" class="mobile-menu__link">Contact</a>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero__inner">
+          <div class="hero__content reveal">
+            <div class="hero__id">
+              <img
+                src="../portfolio/assests/profile_image.jpg"
+                alt="Portrait of Amol Rangole"
+                class="hero__avatar"
+                width="56"
+                height="56"
+              />
+              <p class="eyebrow">
+                <span class="eyebrow__dot"></span>Frontend / UI Developer ·
+                Pune, India
+              </p>
+            </div>
+            <h1 class="hero__name">Amol Rangole</h1>
+            <p class="hero__role">
+              I build the widgets people fill in right before they buy.
+            </p>
+            <p class="hero__summary">
+              6+ years turning Figma files into pixel-perfect, cross-browser
+              widgets for insurance, lending and banking platforms — the quote
+              forms, filters and listing cards embedded across publisher sites
+              like Insure.com, Cardratings.com and MyBankTracker.
+            </p>
+
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <span class="hero__stat-num">6y 10m</span>
+                <span class="hero__stat-label">Experience</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-num">$106K</span>
+                <span class="hero__stat-label">Incremental revenue</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-num">10+</span>
+                <span class="hero__stat-label">Production sites shipped</span>
+              </div>
+            </div>
+
+            <div class="hero__cta">
+              <a href="#projects" class="btn btn--primary">View My Work</a>
+              <a
+                href="assets/Amol_Rangole_Resume.pdf"
+                download
+                class="btn btn--outline"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__visual reveal reveal--delay">
+            <div class="widget-stage" aria-hidden="true">
+              <div class="widget-card widget-card--form">
+                <div class="widget-card__bar">
+                  <span class="widget-card__dot"></span
+                  ><span class="widget-card__dot"></span
+                  ><span class="widget-card__dot"></span>
+                  <span class="widget-card__title">auto-quote-widget.html</span>
+                </div>
+                <div class="widget-card__body">
+                  <label class="wfield">
+                    <span>ZIP Code</span>
+                    <span class="wfield__input"
+                      ><span class="wfield__caret"></span
+                    ></span>
+                  </label>
+                  <label class="wfield">
+                    <span>Coverage type</span>
+                    <span class="wfield__input wfield__input--select"
+                      >Full coverage</span
+                    >
+                  </label>
+                  <button class="wfield__btn">Get my quotes</button>
+                </div>
+              </div>
+
+              <div class="widget-card widget-card--results">
+                <div class="widget-card__bar">
+                  <span class="widget-card__dot"></span
+                  ><span class="widget-card__dot"></span
+                  ><span class="widget-card__dot"></span>
+                  <span class="widget-card__title">results-list.njk</span>
+                </div>
+                <div class="widget-card__body">
+                  <div class="wresult">
+                    <span class="wresult__logo">GEICO</span>
+                    <span class="wresult__bar"><i style="width: 82%"></i></span>
+                    <span class="wresult__cta">View</span>
+                  </div>
+                  <div class="wresult wresult--highlight">
+                    <span class="wresult__logo">Progressive</span>
+                    <span class="wresult__bar"><i style="width: 94%"></i></span>
+                    <span class="wresult__cta">View</span>
+                  </div>
+                  <div class="wresult">
+                    <span class="wresult__logo">Insurify</span>
+                    <span class="wresult__bar"><i style="width: 71%"></i></span>
+                    <span class="wresult__cta">View</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-chip widget-chip--ab">
+                <span>A/B</span> variant won +12%
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true"><span></span></div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="section__inner section__inner--narrow reveal">
+          <div class="about__head">
+            <img
+              src="assets/profile.jpg"
+              alt="Portrait of Amol Rangole"
+              class="about__photo"
+              width="88"
+              height="88"
+            />
+            <div>
+              <p class="section__eyebrow" style="margin-bottom: 6px">
+                01 — About
+              </p>
+              <h2 class="section__title" style="margin-bottom: 0">
+                Pixel-perfect isn't a slogan. It's Tuesday.
+              </h2>
+            </div>
+          </div>
+          <p class="section__lead">
+            I'm a Frontend/UI Developer with 6 years 10 months of professional
+            experience building responsive, user-centric web applications and
+            widgets across insurance and ecommerce. I work mainly in HTML5, CSS3
+            and vanilla JavaScript (ES6+), and I'm currently building with
+            React.js as I take on more component-driven work.
+          </p>
+          <p class="section__lead">
+            My day-to-day is converting Figma designs into pixel-perfect,
+            cross-browser, mobile-first widgets — the forms and quote listings
+            that sit on publisher sites and actually decide whether a visitor
+            converts. I care about clean, reusable code, tight collaboration
+            with design and QA, and shipping widgets that hold up across devices
+            and A/B tests.
+          </p>
+          <div class="about__grid">
+            <div class="about__card">
+              <span class="about__card-icon" aria-hidden="true">◧</span>
+              <h3>Figma → Code</h3>
+              <p>
+                Translating creative team designs into optimized, readable
+                HTML/CSS/JS and Nunjucks templates.
+              </p>
+            </div>
+            <div class="about__card">
+              <span class="about__card-icon" aria-hidden="true">◨</span>
+              <h3>Cross-device QA</h3>
+              <p>
+                Unit testing across devices with Browserstack to catch bugs
+                before they reach production.
+              </p>
+            </div>
+            <div class="about__card">
+              <span class="about__card-icon" aria-hidden="true">◩</span>
+              <h3>AI-assisted delivery</h3>
+              <p>
+                Using Cursor with Claude models to speed up development,
+                debugging and delivery timelines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section section--alt" id="skills">
+        <div class="section__inner reveal">
+          <p class="section__eyebrow">02 — Skills</p>
+          <h2 class="section__title">The stack behind every widget</h2>
+
+          <div class="skills__grid">
+            <div class="skill-group">
+              <h3 class="skill-group__title">Frontend Development</h3>
+              <div class="skill-group__pills">
+                <span class="pill">HTML5</span>
+                <span class="pill">CSS3</span>
+                <span class="pill">Vanilla JavaScript (ES6+)</span>
+                <span class="pill">JSON</span>
+                <span class="pill">React.js <em>(learning)</em></span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">
+                UI/UX &amp; Design Implementation
+              </h3>
+              <div class="skill-group__pills">
+                <span class="pill">Figma to HTML</span>
+                <span class="pill">Pixel-perfect UI</span>
+                <span class="pill">Cross-browser compatibility</span>
+                <span class="pill">Mobile-first design</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Responsive &amp; Templating</h3>
+              <div class="skill-group__pills">
+                <span class="pill">Responsive Web Design</span>
+                <span class="pill">Nunjucks</span>
+                <span class="pill">Bootstrap</span>
+                <span class="pill">SASS</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">CMS Platforms</h3>
+              <div class="skill-group__pills">
+                <span class="pill">Site Glide</span>
+                <span class="pill">WordPress</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Data &amp; Backend-adjacent</h3>
+              <div class="skill-group__pills">
+                <span class="pill">SQL</span>
+                <span class="pill">MS SQL Server Mgmt Studio</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Tools &amp; Workflow</h3>
+              <div class="skill-group__pills">
+                <span class="pill">Git / Version Control</span>
+                <span class="pill">Visual Studio Code</span>
+                <span class="pill">JIRA · Agile</span>
+                <span class="pill">Figma</span>
+                <span class="pill">Browserstack</span>
+                <span class="pill">Cursor AI (Claude models)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section" id="experience">
+        <div class="section__inner reveal">
+          <p class="section__eyebrow">03 — Experience</p>
+          <h2 class="section__title">
+            6 years 10 months, two teams, one focus
+          </h2>
+
+          <div class="timeline">
+            <article class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <div class="timeline__head">
+                  <div>
+                    <h3 class="timeline__role">UI Developer</h3>
+                    <p class="timeline__company">
+                      QuinStreet Software Pvt. Ltd. · Pune
+                    </p>
+                  </div>
+                  <span class="timeline__dates"
+                    >Jul 2022 – Jul 2026 <em>· 4 yrs</em></span
+                  >
+                </div>
+                <ul class="timeline__list">
+                  <li>
+                    Built widgets for the Auto Insurance
+                    <strong>SureHits</strong> team across auto, life, health and
+                    home insurance, integrating and managing them on publisher
+                    websites.
+                  </li>
+                  <li>
+                    Developed Personal Loans widgets, contributing with the team
+                    to <strong>$106,000 in incremental lender revenue</strong>.
+                  </li>
+                  <li>
+                    Built and maintained widgets for
+                    <strong>Cardratings.com</strong> across card categories
+                    (Cashback, Rewards, Travel) with pagination and multiple
+                    inventory types.
+                  </li>
+                  <li>
+                    Developed <strong>Compact Rich Listings</strong> for select
+                    clients (GEICO, Progressive, Insurify) to stand out on
+                    listing pages, increasing clicks and revenue for those
+                    clients.
+                  </li>
+                  <li>
+                    Built <strong>Banking Widgets</strong> (Savings, Checking,
+                    CDs) with customized listings for clients including
+                    GAINBRIDGE and Marcus.
+                  </li>
+                  <li>
+                    Implemented <strong>A/B tests</strong>, building different
+                    UI versions of the same widget to determine winning
+                    variants.
+                  </li>
+                  <li>
+                    Used <strong>Nunjucks</strong> to write dynamic HTML with
+                    variables, loops and blocks; used SQL to manage widget
+                    inventory data.
+                  </li>
+                  <li>
+                    Adopted <strong>Cursor AI</strong> (Claude Sonnet, Opus,
+                    Haiku) for Figma-to-code conversion, cutting development
+                    time and speeding up debugging.
+                  </li>
+                  <li>
+                    Worked in Agile with JIRA, in a team of 6 (4 developers, 2
+                    QA); ran daily stand-ups and mentored new team members.
+                  </li>
+                </ul>
+                <div class="timeline__tags">
+                  <span class="pill pill--tag">HTML5</span
+                  ><span class="pill pill--tag">CSS3</span
+                  ><span class="pill pill--tag">Vanilla JS</span>
+                  <span class="pill pill--tag">Nunjucks</span
+                  ><span class="pill pill--tag">SQL</span
+                  ><span class="pill pill--tag">Figma</span>
+                  <span class="pill pill--tag">JIRA</span
+                  ><span class="pill pill--tag">Cursor AI</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <div class="timeline__head">
+                  <div>
+                    <h3 class="timeline__role">Software Developer</h3>
+                    <p class="timeline__company">
+                      Vidushi Infotech SSP Pvt. Ltd. · Pune
+                    </p>
+                  </div>
+                  <span class="timeline__dates"
+                    >Oct 2019 – Jul 2022 <em>· 2 yrs 10 mo</em></span
+                  >
+                </div>
+                <ul class="timeline__list">
+                  <li>
+                    Worked in a KPO team as a dedicated resource for a client
+                    based in <strong>Martinique, France</strong>, for 2 years.
+                  </li>
+                  <li>
+                    Built responsive websites end-to-end on
+                    <strong>Site Glide CMS</strong> — secure zones, web-apps,
+                    ecommerce, Stripe payment gateway, forms, blog/events/FAQ
+                    modules.
+                  </li>
+                  <li>
+                    Delivered projects from initial design to responsive site
+                    using HTML5, CSS3, Bootstrap4, SASS and JavaScript/ES6.
+                  </li>
+                  <li>
+                    Optimized for cross-browser and cross-device compatibility
+                    to improve user experience.
+                  </li>
+                  <li>
+                    Supported SEO and online presence using Google Search
+                    Console, Google My Business and Constant Contact, working
+                    alongside the digital marketing team.
+                  </li>
+                  <li>
+                    Worked with WordPress, including plugin usage and theme
+                    customization.
+                  </li>
+                  <li>
+                    Joined daily calls with foreign clients on requirements and
+                    support, and took part in code review and defect resolution.
+                  </li>
+                </ul>
+                <div class="timeline__tags">
+                  <span class="pill pill--tag">Site Glide</span
+                  ><span class="pill pill--tag">HTML5</span
+                  ><span class="pill pill--tag">CSS3</span>
+                  <span class="pill pill--tag">Bootstrap4</span
+                  ><span class="pill pill--tag">SASS</span
+                  ><span class="pill pill--tag">JavaScript</span>
+                  <span class="pill pill--tag">WordPress</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section section--alt" id="projects">
+        <div class="section__inner reveal">
+          <p class="section__eyebrow">04 — Featured Projects</p>
+          <h2 class="section__title">Widgets shipped, sites impacted</h2>
+
+          <div class="projects__grid">
+            <article class="project-card">
+              <div class="project-card__top">
+                <span class="project-card__tag"
+                  >Insurance · Auto/Life/Health/Home</span
+                >
+                <h3>Ask Pond</h3>
+                <p class="project-card__url">askpond.com</p>
+              </div>
+              <p class="project-card__desc">
+                Helps people find smarter insurance options and hidden savings
+                across auto, personal loan and credit card categories.
+              </p>
+              <p class="project-card__contribution">
+                <strong>My contribution:</strong> Built the auto, personal loan
+                and credit card widgets — forms and quote listings — from Figma
+                designs, using Cursor AI (Sonnet, Haiku) to convert designs into
+                optimized Nunjucks/HTML. Used SQL to structure widget inventory
+                data.
+              </p>
+              <div class="project-card__meta">
+                <div class="project-card__tags">
+                  <span class="pill pill--tag">HTML5</span
+                  ><span class="pill pill--tag">CSS3</span
+                  ><span class="pill pill--tag">Nunjucks</span
+                  ><span class="pill pill--tag">Cursor AI</span
+                  ><span class="pill pill--tag">SQL</span>
+                </div>
+                <p class="project-card__impact">
+                  Delivered ahead of timeline — faster AI-assisted development
+                  earned client appreciation.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <span class="project-card__tag">Fintech · Credit Cards</span>
+                <h3>Cardratings.com</h3>
+                <p class="project-card__url">cardratings.com</p>
+              </div>
+              <p class="project-card__desc">
+                Unbiased credit card reviews across 150+ cards, helping
+                cardholders compare and choose with confidence.
+              </p>
+              <p class="project-card__contribution">
+                <strong>My contribution:</strong> Built filter navigation and
+                card listing widgets from Figma, implemented pagination for
+                dynamic per-page listings, and wired card data returned via the
+                SureHits API into the UI.
+              </p>
+              <div class="project-card__meta">
+                <div class="project-card__tags">
+                  <span class="pill pill--tag">HTML5</span
+                  ><span class="pill pill--tag">CSS3</span
+                  ><span class="pill pill--tag">Nunjucks</span
+                  ><span class="pill pill--tag">Browserstack</span>
+                </div>
+                <p class="project-card__impact">
+                  Cross-device unit testing via Browserstack kept listings
+                  consistent across browsers.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <span class="project-card__tag"
+                  >Insurance · Consumer Resource</span
+                >
+                <h3>Insure.com</h3>
+                <p class="project-card__url">insure.com</p>
+              </div>
+              <p class="project-card__desc">
+                Comprehensive consumer resource for auto, home, health and life
+                insurance — advice, articles and comparison tools.
+              </p>
+              <p class="project-card__contribution">
+                <strong>My contribution:</strong> Built and maintained
+                multi-line insurance widgets, form flows collecting user inputs
+                through to results, and Compact Rich Listings for select clients
+                to stand out and drive more revenue.
+              </p>
+              <div class="project-card__meta">
+                <div class="project-card__tags">
+                  <span class="pill pill--tag">HTML5</span
+                  ><span class="pill pill--tag">CSS3</span
+                  ><span class="pill pill--tag">JS Form Validation</span
+                  ><span class="pill pill--tag">Nunjucks</span>
+                </div>
+                <p class="project-card__impact">
+                  Rich listing treatment increased clicks for participating
+                  clients.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card project-card--highlight">
+              <div class="project-card__top">
+                <span class="project-card__tag"
+                  >Banking · Rates &amp; Personal Loans</span
+                >
+                <h3>Moneyrates &amp; MyBankTracker</h3>
+                <p class="project-card__url">
+                  moneyrates.com · mybanktracker.com
+                </p>
+              </div>
+              <p class="project-card__desc">
+                Banking-domain sites keeping customers informed on savings, CD
+                and money market rates, plus personal loan comparisons (AmOne).
+              </p>
+              <p class="project-card__contribution">
+                <strong>My contribution:</strong> Built banking widgets with
+                loan-purpose/amount/credit-rating filters and matched listings;
+                ran A/B tests across UI variants; built the AmOne Personal Loans
+                widget that helped generate
+                <strong>$106,000 in incremental lender revenue</strong>.
+              </p>
+              <div class="project-card__meta">
+                <div class="project-card__tags">
+                  <span class="pill pill--tag">HTML5</span
+                  ><span class="pill pill--tag">CSS3</span
+                  ><span class="pill pill--tag">Nunjucks</span
+                  ><span class="pill pill--tag">A/B Testing</span
+                  ><span class="pill pill--tag">SQL</span>
+                </div>
+                <p class="project-card__impact project-card__impact--gold">
+                  $106K incremental lender revenue
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="other-work">
+            <h3 class="other-work__title">
+              Also shipped — Site Glide builds for clients in Martinique &amp;
+              Guadeloupe
+            </h3>
+            <div class="other-work__list">
+              <div class="other-work__item">
+                <span class="other-work__name">Mr. Rayonnage</span>
+                <span class="other-work__desc"
+                  >Ecommerce site with secure zone, cart/wishlist and catalog
+                  management.</span
+                >
+              </div>
+              <div class="other-work__item">
+                <span class="other-work__name">West Indies Promotions</span>
+                <span class="other-work__desc"
+                  >Construction showcase site with secure zone and scroll
+                  animations.</span
+                >
+              </div>
+              <div class="other-work__item">
+                <span class="other-work__name">Arthur Assurance</span>
+                <span class="other-work__desc"
+                  >Insurance broker site migrated from Business Catalyst to Site
+                  Glide.</span
+                >
+              </div>
+              <div class="other-work__item">
+                <span class="other-work__name">TILO</span>
+                <span class="other-work__desc"
+                  >Ecommerce quote forms and catalog for a promotional-print
+                  business.</span
+                >
+              </div>
+              <div class="other-work__item">
+                <span class="other-work__name">WSIDOM</span>
+                <span class="other-work__desc"
+                  >Digital agency site migration with SEO implementation.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ACHIEVEMENTS / IMPACT ============ -->
+      <section class="section impact" id="impact">
+        <div class="section__inner reveal">
+          <p class="section__eyebrow section__eyebrow--light">05 — Impact</p>
+          <h2 class="section__title section__title--light">
+            Numbers behind the widgets
+          </h2>
+
+          <div class="impact__grid">
+            <div class="impact__hero">
+              <span class="impact__figure">$106K</span>
+              <span class="impact__label"
+                >Incremental lender revenue from the Personal Loans widget,
+                built with the QuinStreet team</span
+              >
+            </div>
+            <div class="impact__stack">
+              <div class="impact__stat">
+                <span class="impact__stat-num">6y 10m</span>
+                <span class="impact__stat-label"
+                  >Professional frontend/UI experience across QuinStreet and
+                  Vidushi Infotech</span
+                >
+              </div>
+              <div class="impact__stat">
+                <span class="impact__stat-num">3</span>
+                <span class="impact__stat-label"
+                  >Marquee listing clients elevated with Compact Rich Listings —
+                  GEICO, Progressive, Insurify</span
+                >
+              </div>
+              <div class="impact__stat">
+                <span class="impact__stat-num">2 yrs</span>
+                <span class="impact__stat-label"
+                  >Dedicated resource for an international client in Martinique,
+                  France</span
+                >
+              </div>
+              <div class="impact__stat">
+                <span class="impact__stat-num">6</span>
+                <span class="impact__stat-label"
+                  >Cross-functional team size (4 developers + 2 QA)
+                  collaborating on delivery</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TECHNOLOGY STACK ============ -->
+      <section class="section" id="stack">
+        <div class="section__inner reveal">
+          <p class="section__eyebrow">06 — Technology Stack</p>
+          <h2 class="section__title">Everyday toolkit</h2>
+          <div class="stackgrid">
+            <span class="stackgrid__item">HTML5</span>
+            <span class="stackgrid__item">CSS3</span>
+            <span class="stackgrid__item">JavaScript ES6+</span>
+            <span class="stackgrid__item">SASS</span>
+            <span class="stackgrid__item">Bootstrap</span>
+            <span class="stackgrid__item">Nunjucks</span>
+            <span class="stackgrid__item">React.js</span>
+            <span class="stackgrid__item">SQL</span>
+            <span class="stackgrid__item">Site Glide</span>
+            <span class="stackgrid__item">WordPress</span>
+            <span class="stackgrid__item">Figma</span>
+            <span class="stackgrid__item">JIRA</span>
+            <span class="stackgrid__item">Browserstack</span>
+            <span class="stackgrid__item">Cursor AI</span>
+            <span class="stackgrid__item">Git</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CERTIFICATIONS & EDUCATION ============ -->
+      <section class="section section--alt" id="learning">
+        <div class="section__inner reveal">
+          <div class="learning__grid">
+            <div>
+              <p class="section__eyebrow">07 — Certifications</p>
+              <ul class="learning__list">
+                <li>
+                  <a
+                    href="https://www.udemy.com/certificate/UC-606d7603-3c2a-44bb-8a86-4c856dab1627/"
+                    target="_blank"
+                    rel="noopener"
+                    >The Complete 2020 Web Development Bootcamp</a
+                  >
+                  <span>Udemy</span>
+                </li>
+                <li>
+                  <a
+                    href="https://www.freecodecamp.org/certification/fcc39ea6cf9-c713-40cc-96dd-b59ed9408dfa/responsive-webdesign"
+                    target="_blank"
+                    rel="noopener"
+                    >Responsive Web Design</a
+                  >
+                  <span>freeCodeCamp</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="section__eyebrow">08 — Education</p>
+              <ul class="learning__list">
+                <li>
+                  <span class="learning__deg"
+                    >B.Tech, Information Technology</span
+                  >
+                  <span
+                    >Government College of Engineering, Amravati · 2014 –
+                    2018</span
+                  >
+                </li>
+                <li>
+                  <span class="learning__deg">High School, Science</span>
+                  <span
+                    >Late Jyoti Janolkar College of Science, Akola · 2012 –
+                    2014</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section contact" id="contact">
+        <div class="section__inner section__inner--narrow reveal">
+          <p class="section__eyebrow">09 — Contact</p>
+          <h2 class="section__title">Let's build the next widget.</h2>
+          <p class="section__lead">
+            Open to Frontend/UI Developer roles where pixel-perfect, responsive
+            interfaces matter. Reach out — I usually reply within a day.
+          </p>
+
+          <div class="contact__cards">
+            <a class="contact__card" href="mailto:amolrangole101@gmail.com">
+              <span class="contact__label">Email</span>
+              <span class="contact__value">amolrangole101@gmail.com</span>
+            </a>
+            <a class="contact__card" href="tel:+917559445686">
+              <span class="contact__label">Phone</span>
+              <span class="contact__value">+91 75594 45686</span>
+            </a>
+            <a
+              class="contact__card"
+              href="https://www.linkedin.com/in/amol-rangole-003a17123/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">/in/amol-rangole</span>
+            </a>
+          </div>
+
+          <a
+            href="mailto:amolrangole101@gmail.com"
+            class="btn btn--primary btn--lg"
+            >Say Hello</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <span class="footer__name">Amol Rangole</span>
+          <span class="footer__role">Frontend / UI Developer</span>
+        </div>
+        <p class="footer__copy">
+          © <span id="year"></span> Amol Mahadeo Rangole. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <button class="totop" id="toTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

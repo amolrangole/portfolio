@@ -85,7 +85,9 @@
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+      // Large sections can be taller than a mobile viewport; a low threshold
+      // ensures they reveal as soon as they enter view.
+      { threshold: 0.01, rootMargin: "0px 0px -20px 0px" }
     );
     revealEls.forEach(function (el) { io.observe(el); });
   } else {
